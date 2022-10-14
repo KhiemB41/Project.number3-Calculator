@@ -84,3 +84,7 @@ elif select ==7:
     print("Exit")
     exit()
     
+    
+else:
+    print("Invalid input")
+    
