@@ -2,7 +2,7 @@ Project number3- Calculator
 Name: Nguyen Tan Hao - Khiem Bui
 Date: 13 Oct 2022
 
-Description:
+#Description:
 CalculatorBuilda program that can be used as a basic calculator. Your program should have a menu displayed for the user to choose from, where are listed basic operations:addition,subtraction multiplication,division, second power, square root, exit.
 The program shouldallow user to choose the desired operation over and over again until user chooses to quit using it.
 
@@ -29,8 +29,7 @@ def Secon_Power(num1):
 # Function to square root two numbers
 import math
 
- 
-print("Please select your choice -\n" \
+ print("Please select your choice -\n" \
         "1. Add\n" \
         "2. Subtract\n" \
         "3. Multiply\n" \
@@ -79,12 +78,11 @@ elif select == 6:
     
     print ("The square root of {number} is " ,sqRoot, "The square root of is", sqRoot)
 
-    
+   
 elif select ==7:
     print("Exit")
     exit()
-    
-    
+     
 else:
     print("Invalid input")
     
