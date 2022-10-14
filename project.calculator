@@ -1,0 +1,86 @@
+Project number3- Calculator
+Name: Nguyen Tan Hao - Khiem Bui
+Date: 13 Oct 2022
+
+Description:
+CalculatorBuilda program that can be used as a basic calculator. Your program should have a menu displayed for the user to choose from, where are listed basic operations:addition,subtraction multiplication,division, second power, square root, exit.
+The program shouldallow user to choose the desired operation over and over again until user chooses to quit using it.
+
+# Function to add two numbers
+def add(num1, num2):
+    return num1 + num2
+ 
+# Function to subtract two numbers
+def subtract(num1, num2):
+    return num1 - num2
+ 
+# Function to multiply two numbers
+def multiply(num1, num2):
+    return num1 * num2
+ 
+# Function to divide two numbers
+def divide(num1, num2):
+    return num1 / num2
+
+# Function to second power two numbers
+def Secon_Power(num1):
+    return num1 **2
+
+# Function to square root two numbers
+import math
+
+ 
+print("Please select your choice -\n" \
+        "1. Add\n" \
+        "2. Subtract\n" \
+        "3. Multiply\n" \
+        "4. Divide\n" \
+        "5. Second Power\n" \
+        "6. Square root\n" \
+        "7. Exit"
+     )
+ 
+# Take input from the user
+select = int(input("Select operations form 1, 2, 3, 4, 5, 6, 7 :"))
+ 
+if select == 1:
+    number_1 = int(input("Enter first number: "))
+    number_2 = int(input("Enter second number: "))
+    print(number_1, "+", number_2, "=",
+                    add(number_1, number_2))
+ 
+elif select == 2:
+    number_1 = int(input("Enter first number: "))
+    number_2 = int(input("Enter second number: "))
+    print(number_1, "-", number_2, "=",
+                    subtract(number_1, number_2))
+ 
+elif select == 3:
+    number_1 = int(input("Enter first number: "))
+    number_2 = int(input("Enter second number: "))
+    print(number_1, "", number_2, "=",
+          
+                    multiply(number_1, number_2))
+ 
+elif select == 4:
+    number_1 = int(input("Enter first number: "))
+    number_2 = int(input("Enter second number: "))
+    print(number_1, "/", number_2, "=",
+                    divide(number_1, number_2))
+    
+elif select == 5:
+    number_1 = int(input("Enter number: "))
+    print("Power of", number_1, "is",
+                    (number_1**2))
+    
+elif select == 6:
+    number_1 = int(input("Enter the number: "))
+    sqRoot = math.sqrt(number_1)
+    
+    print ("The square root of {number} is " ,sqRoot, "The square root of is", sqRoot)
+
+    
+elif select ==7:
+    print("Exit")
+    exit()
+    
